@@ -8,7 +8,7 @@ class LoadingLottie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
+      child: SizedBox(
         width: 150.w,
         height: 150.h,
         child: Lottie.asset('assets/loading/load.json'),

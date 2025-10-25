@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/Home.dart';
+import 'package:meal_app/Views/NavHome.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingWithBackground extends StatefulWidget {
-  const OnboardingWithBackground({Key? key}) : super(key: key);
+  const OnboardingWithBackground({super.key});
 
   @override
   _OnboardingWithBackgroundState createState() =>
@@ -56,7 +56,7 @@ class _OnboardingWithBackgroundState extends State<OnboardingWithBackground> {
             child: Container(
               width: 350,
               height: 450,
-              //   color: Colors.deepOrange,
+              //   color: Colors.,
               decoration: BoxDecoration(
                 color: Colors.deepOrange,
                 borderRadius: BorderRadius.circular(20),
@@ -135,9 +135,7 @@ class _OnboardingWithBackgroundState extends State<OnboardingWithBackground> {
                       onPressed:
                           () => Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) => HomeScreen(),
-                            ),
+                            MaterialPageRoute(builder: (context) => HomePage()),
                           ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
@@ -175,7 +173,7 @@ class _OnboardingWithBackgroundState extends State<OnboardingWithBackground> {
                 onPressed:
                     () => Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                      MaterialPageRoute(builder: (context) => HomePage()),
                     ),
                 child: const Text(
                   'Skip',

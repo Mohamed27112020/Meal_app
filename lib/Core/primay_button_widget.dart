@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PrimayButtonWidget extends StatelessWidget {
-  
   final String? buttonText;
   final Color? buttonColor;
   final double? width;
@@ -42,7 +40,6 @@ class PrimayButtonWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-  
           Text(
             buttonText ?? "",
             style: TextStyle(
